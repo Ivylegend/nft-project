@@ -1,0 +1,159 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   min-height: 100vh;
+   background-color: hsl(217, 54%, 11%);
+   font-family: sans-serif;
+   font-size: 18px;
+   text-align: left;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(216, 50%, 16%);
+    max-width: 400px;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+h1{
+  color: white;
+  margin-left: -150px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  margin-top: 25px;
+}
+
+h1:hover{
+  color:  hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.image{
+  cursor: pointer;
+}
+
+.container .top-image div{
+  position: absolute;
+  background-color:  hsl(178, 100%, 50%, 60%);
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+  top: 0%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.container .top-image div:hover{
+  opacity: 100%;
+  border-radius: 10px;
+}
+
+.container .top-image{
+  position: relative;
+}
+
+.container .top-image div img{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.one{
+   color: hsl(215, 51%, 70%);
+   width: 300px;
+   margin-left: -50px;
+   margin-bottom: 25px;
+}
+
+.two{
+  color: hsl(178, 100%, 50%);
+  margin-left: -10px ;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.days{
+  margin-left: 120px; 
+  color: hsl(215, 51%, 70%);
+}
+
+.image{
+  border-radius: 10px;
+}
+
+.img-eth{
+  margin-right: 10px;
+}
+
+.img-clock{
+  margin-right: 5px;
+}
+
+hr{
+  width: 95%;
+  margin: 20px auto;
+  color: hsl(215, 51%, 70%);
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto 10px -25px;
+}
+
+.footer img{
+  width: 12%;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.avatar{
+  border-width: 10px;
+}
+
+.name{
+  color: white;
+}
+
+.name:hover{
+  color:  hsl(178, 100%, 50%);
+}
+
+.footer p{
+  color: hsl(215, 51%, 70%);
+  margin-left: -10px;
+}
+
+@media (max-width: 500px) {
+  .container{
+    width: 400px;
+  }
+}
+
